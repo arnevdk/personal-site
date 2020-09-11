@@ -1,0 +1,146 @@
+html, body {
+
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:visited {
+    color: #333;
+    text-decoration: none
+}
+
+
+li {
+    padding: 1em;
+
+}
+
+.main-panel {
+    min-height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+#left {
+    width: 40%;
+    overflow: hidden;
+    left: 0;
+    position: fixed;
+}
+
+#right {
+    width: 60%;
+    background-color: #eee;
+    right: 0;
+}
+
+#left .blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1)
+}
+
+.container {
+    padding: 7em 5em;
+    max-width: calc(1000px - 10em);
+}
+
+#me {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+/ / text-align: center;
+}
+
+#me > div {
+    width: 70%;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+#me .profile-picture {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-image: url('profile.jpg');
+    background-image: center;
+    background-size: cover;
+/ / border-radius: 50 %;
+/ / border: 1 px solid #555;
+}
+
+#me a {
+    color: #eee;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+h1 {
+    margin-top: 1em;
+    color: #eee;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: black;
+    margin-top: 1em;
+}
+
+h3 {
+    color: white;
+    margin-bottom: .5em;
+}
+
+#matrix {
+    height: 1em;
+    width: auto;
+}
+
+
+.project {
+    list-style-image: url('gitlab.png');
+}
+
+.website {
+    list-style-image: url('web.png');
+}
+
+a.tag {
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    font-size: 1.2rem;
+    padding: .4em;
+    padding-bottom: .2em;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: .25em;
+}
+
+.list-wrapper {
+    display: block;
+    padding-left: 2.7em;
+
+}
+
+.list-wrapper:hover {
+    background-color: #ddd;
+}
