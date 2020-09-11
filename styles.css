@@ -14,6 +14,11 @@ a, a:link, a:visited {
     text-decoration: none
 }
 
+a:link:hover{
+    text-decoration: underline
+}
+
+
 
 li {
     padding: 1em;
@@ -56,7 +61,7 @@ li {
 }
 
 .container {
-    padding: 7em 5em;
+    padding: 5em 5em;
     max-width: calc(1000px - 10em);
 }
 
@@ -89,7 +94,6 @@ li {
 
 #me a {
     color: #eee;
-    text-decoration: none;
     white-space: nowrap;
 }
 
@@ -127,7 +131,7 @@ a.tag {
     display: inline-block;
     background-color: #666;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: .4em;
     padding-bottom: .2em;
     border-radius: 5px;
@@ -143,4 +147,19 @@ a.tag {
 
 .list-wrapper:hover {
     background-color: #ddd;
+    text-decoration: none!important;
+}
+
+.page-nav{
+    float: right;
+}
+
+#pages{
+    position: relative;
+}
+
+.page{
+    display: inline-block;
+    position: absolute;
+    top: 0;
 }
