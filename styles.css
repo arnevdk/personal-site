@@ -170,11 +170,6 @@ li {
     display: inline-block;
     width: 150px;
     height: 150px;
-    background-image: url('profile.jpg');
-    background-image: center;
-    background-size: cover;
-/ / border-radius: 50 %;
-/ / border: 1 px solid #555;
 }
 
 #me a {
