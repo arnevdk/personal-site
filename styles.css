@@ -198,36 +198,54 @@ h3 {
     width: auto;
 }
 
-
-.list-wrapper {
-    display: block;
-    padding-left: 2.7em;
+.experience {
+    margin-left: -1em;
+    margin-top: -1em;
+    transition: all .2s ease-in;
 
 }
 
-.list-wrapper:hover {
+.experience td {
+    padding: 1em;
+    padding-right: 0;
+    vertical-align: top;
+}
+
+.experience td:last-child {
+    padding-right: 1em;
+}
+
+.experience td:first-child {
+    white-space: nowrap;
+}
+
+.experience img {
+    width: 75px;
+    height: auto;
+}
+
+
+.experience:hover, .experience.active {
+    margin-top: 0;
+    margin-bottom: 1em;
     background-color: #ddd;
     text-decoration: none !important;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
-.list-wrapper.experience {
-    background-repeat: no-repeat;
-    list-style-type: none;
-    padding-left: 5em;
-    margin-top: 1em;
-    min-height: 75px;
-}
 
-.list-wrapper .extra-info {
+.experience .extra-info {
     max-height: 0;
     visibility: hidden;
     opacity: 0;
     transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
+    color: #555
 }
 
-.list-wrapper:hover .extra-info {
-    max-height: 4em;
+.experience:hover .extra-info, .experience.active .extra-info {
+    max-height: 6em;
     visibility: visible;
     opacity: 1;
     padding-top: 1em;
@@ -236,13 +254,37 @@ h3 {
 
 }
 
+.experience.small-experience {
+    margin-left: -.3em;
+    margin-top: -.3em;
+}
+
+.experience.small-experience:hover {
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+.experience.small-experience td {
+    padding: .3em;
+}
+
+.experience.small-experience img {
+    width: 1em;
+    height: auto;
+}
+
+.experience.experience-project img {
+    width: 1em;
+    height: auto;
+}
+
 .page-nav {
     float: right;
 }
 
 #pages {
     /*position: relative;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .page {
@@ -263,45 +305,3 @@ a.tag {
     margin-top: .25em;
 }
 
-
-.project {
-    list-style-image: url('logos/gitlab.png');
-}
-
-.website {
-    list-style-image: url('logos/web.png');
-}
-
-.project {
-    list-style-image: url('logos/gitlab.png');
-}
-
-.kul {
-    background-image: url('logos/kul.jpg');
-}
-
-.mindspeller {
-    background-image: url('logos/mindspeller.png');
-
-}
-
-.job {
-    background-image: url('logos/job.png');
-
-}
-
-.baf {
-    background-image: url('logos/baf.png');
-
-}
-
-.small-list-wrapper {
-    padding: .3em;
-    padding-left: 0;
-}
-
-.small-list-wrapper img {
-    height: 1em;
-    width: auto;
-    margin-right: .5em;
-}

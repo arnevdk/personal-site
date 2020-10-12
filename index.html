@@ -6,12 +6,16 @@
     <link rel="canonical" href="https://vandenkerchove.com/">
 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3c06ca31b5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c06ca31b5.js"
+            crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <main>
@@ -21,9 +25,10 @@
         </div>
         <div id="me">
             <div>
-                <img class="profile-picture" src="profile.jpg" alt="Arne Van Den Kerchove"></img>
+                <img class="profile-picture" src="profile.jpg"
+                     alt="Arne Van Den Kerchove"></img>
                 <h1>Arne Van Den Kerchove</h1>
-                <h3>Computer Science graduate</h3>
+                <h3>Ph.D. Researcher Computational Neuroscience</h3>
                 <a>
                     <i class="fas fa-envelope" class="me-icon"></i>
                     arne[at]vandenkerchove[dot]com
@@ -37,7 +42,9 @@
                     arne-van-den-kerchove
                 </a>&nbsp;&nbsp;
                 <a href="https://matrix.to/#/@arne:matrix.vandenkerchove.com">
-                    <img src="logos/matrix.png" id="matrix" class="me-icon"></img>
+                    <img src="logos/matrix.png"
+                         style="margin-bottom:-0.15em" id="matrix"
+                         class="me-icon"></img>
                     @arne:matrix.vandenkerchove.com
                 </a>
                 <br>
@@ -53,53 +60,94 @@
             <div class="container">
                 <div id="pages">
                     <div class="page" id="page1">
-                        <a class="page-nav" id="page-nav-1" href="#experience">Experience &rarr;</a>
+                        <a class="page-nav" id="page-nav-1"
+                           href="#experience">Experience &rarr;</a>
                         <br>
                         <br>
                         <h2>Publications</h2>
                         <ol>
-                            <a class="list-wrapper" href="#">
-                                <li>A. V. D. Kerchove, <i>Linguistic transcription of EEG responses to sequences of
+                            <a href="#">
+                                <li>A. V. D. Kerchove, <i>Linguistic
+                                    transcription of EEG responses to
+                                    sequences of
                                     visual
                                     stimuli,</i> KU Leuven, 2020.
                                 </li>
                             </a>
                         </ol>
                         <h2>Projects</h2>
-                        <ul id="projects">
-                            <a class="list-wrapper" href="https://gitlab.com/arne.vandenkerchove/whistle">
-                                <li class="project">
-                                    <b>WhistLE</b><br>
-                                    Whist Logic Executor is an AI player for the popular playing card game whist.
-                                    WhistLE
-                                    combines a
-                                    logic game model implemented in MiniZinc with search heuristics implemented in
-                                    python.
-                                </li>
-                            </a>
-                            <a class="list-wrapper" href="https://gitlab.com/arne.vandenkerchove/SubSync">
-                                <li class="project">
-                                    <b>SubSync</b><br>
-                                    SubSync corrects out of sync subtitle files using IBM Watson speech to text and the
-                                    longest
-                                    common
-                                    substring algorithm.
-                                </li>
-                            </a>
-                            <a class="list-wrapper" href="https://www.wina.be">
-                                <li class="website">
-                                    <b>Wina.be</b><br>
-                                    A website for student organisation Wina with membership and event
-                                    management systems, built with Django
-                                </li>
-                            </a>
-                            <a class="list-wrapper" href="https://driesbeheydt.be">
-                                <li class="website">
-                                    <b>DriesBeheydt.be</b><br>
-                                    A website for pianist Dries Beheydt to promote his music, built with Django.
-                                </li>
-                            </a>
-                        </ul>
+                        <br>
+                        <a href="https://gitlab.com/arne.vandenkerchove/whistle">
+                            <table class="experience experience-project">
+                                <tr>
+                                    <td><img src="logos/gitlab.png"/>
+                                    </td>
+                                    <td>
+                                        <b>WhistLE</b><br>
+                                        Whist Logic Executor is an AI
+                                        player
+                                        for the popular playing card
+                                        game
+                                        whist.
+                                        WhistLE
+                                        combines a
+                                        logic game model implemented in
+                                        MiniZinc with search heuristics
+                                        implemented in
+                                        python.
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </a>
+                        <a href="https://gitlab.com/arne.vandenkerchove/SubSync">
+                            <table class="experience experience-project">
+                                <tr>
+                                    <td><img src="logos/gitlab.png"/>
+                                    </td>
+                                    <td>
+                                        <b>SubSync</b><br>
+                                        SubSync corrects out of sync
+                                        subtitle files using IBM Watson
+                                        speech to text and the
+                                        longest
+                                        common
+                                        substring algorithm.
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                        <a href="https://www.wina.be">
+                            <table class="experience experience-project">
+                                <tr>
+                                    <td><img src="logos/web.png"/></td>
+                                    <td>
+                                        <b>Wina.be</b><br>
+                                        A website for student
+                                        organisation
+                                        Wina with membership and event
+                                        management systems, built with
+                                        Django
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                        <a href="https://driesbeheydt.be">
+                            <table class="experience experience-project">
+                                <tr>
+                                    <td><img src="logos/web.png"/></td>
+                                    <td>
+                                        <b>DriesBeheydt.be</b><br>
+                                        A website for pianist Dries
+                                        Beheydt
+                                        to promote his music, built with
+                                        Django.
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+
 
                         <h2>Interests</h2>
                         <a class="tag">Machine Learning</a>
@@ -110,98 +158,294 @@
                         <a class="tag">Cybersecurity</a>
                     </div>
                     <div class="page" id="page2">
-                        <a class="page-nav" id="page-nav-2" href="#about-me">&larr; About me</a>
+                        <a class="page-nav" id="page-nav-2"
+                           href="#about-me">&larr; About me</a>
                         <br>
                         <br>
                         <h2>Education</h2>
-                        <ul id="projects">
-                            <a class="list-wrapper experience kul">
-                                <li>
-                                    <b>MSc. in Engineering Sciences: Computer Science,</b> <i>Cum laude</i><br>
+                        <br>
+                        <table class="experience active">
+                            <tr>
+                                <td>
+                                    <img src="logos/kul.jpg">
+                                    <br/><br/>
+                                    <img src="logos/ulille.jpg">
+                                </td>
+                                <td>
+                                    <b>PhD. in Computational
+                                        Neuroscience</b><br>
+                                    KU Leuven & University of Lille,
+                                    ongoing
+                                    <div class="extra-info">
+                                        KU Leuven Global PhD
+                                        Partnerships 2020 Grant
+                                        <br><br>
+                                        PhD thesis: <i>Covert
+                                        Attention Control of an
+                                        EEG-based Brain-Computer
+                                        Interface using
+                                        Multi-component
+                                        Beamforming</i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/kul.jpg"></td>
+                                <td>
+                                    <b>MSc. in Engineering
+                                        Sciences:
+                                        Computer Science,</b> <i>Cum
+                                    laude</i><br>
                                     KU Leuven, 2020
                                     <div class="extra-info">
-                                        Option Artificial Intelligence
+                                        Option Artificial
+                                        Intelligence.
+                                        Master thesis: <i>Transcription
+                                        of multiple ERP
+                                        components from
+                                        EEG recordings using
+                                        spatio-temporal
+                                        beamforming</i>
+                                        (16/20)
                                     </div>
-                                </li>
-                            </a>
-                            <a class="list-wrapper experience kul">
-                                <li>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/kul.jpg"></td>
+                                <td>
                                     <b>BSc. in Informatics</b><br>
                                     KU Leuven, 2017
                                     <div class="extra-info">
-                                        Minor in natural sciences
+                                        Minor in natural sciences.
+                                        Bachelor thesis: <i>Drone
+                                        simulator and stereoscopic
+                                        object detection
+                                        autopilot</i>
+                                        (19/20)
                                     </div>
-                                </li>
-                            </a>
+                                </td>
+                            </tr>
+                        </table>
 
-                        </ul>
+
                         <h2>Professional experience</h2>
-                        <a class="list-wrapper experience kul">
-                            <li>
-                                <b>Teaching Assistant Fundamentals of Computer Science</b><br>
-                                KU Leuven, 2020 <br>
-                                <div class="extra-info">
-                                    Teaching programming and algorithmic reasoning to first year engineering students.
-                                </div>
-                            </li>
-                        </a>
+                        <br>
 
-                        <a class="list-wrapper experience mindspeller" href="https://www.mindspeller.com/"
-                           target="_blank">
-                            <li>
-                                <b>Python Developer</b><br>
-                                Mindspeller, 2019 <br>
-                                <div class="extra-info">
-                                    Python flask developer in a spin-off of the KU Leuven Computational Neuroscience lab
-                                    that provides marketing services based on neuroscientifically validated association
-                                    studies.
-                                </div>
-                            </li>
-                        </a>
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/kul.jpg"></td>
+                                <td>
+                                    <b>Teaching Assistant Fundamentals
+                                        of
+                                        Computer Science</b><br>
+                                    KU Leuven, 2020 <br>
+                                    <div class="extra-info">
+                                        Teaching programming and
+                                        algorithmic
+                                        reasoning to first year
+                                        engineering
+                                        students.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
 
-                        <a class="list-wrapper experience baf">
-                            <li>
-                                <b>Database Technician</b><br>
-                                Pharmacists Forum of Brabant, 2015 <br>
-                                <div class="extra-info">
-                                    Database refactoring and migration.
-                                </div>
-                            </li>
-                        </a>
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/mindspeller.png">
+                                </td>
+                                <td>
+                                    <b>Python Developer</b><br>
+                                    Mindspeller, 2019 <br>
+                                    <div class="extra-info">
+                                        Python flask developer in a
+                                        spin-off
+                                        of the KU Leuven Computational
+                                        Neuroscience lab
+                                        that provides marketing services
+                                        based on neuroscientifically
+                                        validated association
+                                        studies.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
 
-                        <a class="list-wrapper experience job">
-                            <li>
-                                <b>Full-stack Web Developer</b><br>
-                                Self employed, 2014-ongoing <br>
-                                <div class="extra-info">
-                                    I build and design websites for small start-ups and organisations with Drupal CMS or
-                                    Django,
-                                    combined with hosting on own server infrastructure.
-                                </div>
-                            </li>
-                        </a>
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/baf.png"></td>
+                                <td>
+                                    <b>Database Technician</b><br>
+                                    Pharmacists Forum of Brabant, 2015
+                                    <br>
+                                    <div class="extra-info">
+                                        Database refactoring and
+                                        migration.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/job.png"></td>
+                                <td>
+                                    <b>Full-stack Web Developer</b><br>
+                                    Self employed, 2014-ongoing <br>
+                                    <div class="extra-info">
+                                        I build and design websites for
+                                        small start-ups and
+                                        organisations
+                                        with Drupal CMS or
+                                        Django,
+                                        combined with hosting on own
+                                        server
+                                        infrastructure.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <table class="experience">
+                            <tr>
+                                <td><img src="logos/job.png"></td>
+                                <td>
+                                    <b>Front-end Web Developer</b><br>
+                                    GBITs Web Development, 2014 <br>
+
+                                </td>
+                            </tr>
+                        </table>
 
 
                         <h2>Volunteering Experience</h2>
-                        <div class="small-list-wrapper">
-                            <img src="logos/rc.png"></img><b>Red Cross,</b> Event Paramedic
-                        </div>
-                        <div class="small-list-wrapper">
-                            <img src="logos/rc.png"><b>Red Cross Youth Retie-Dessel,</b> Deputy President and First Aid
-                            Instructor
-                        </div>
-                        <div class="small-list-wrapper">
-                            <img src="logos/kul.jpg"></img><b>KU Leuven,</b> PAL Tutor Principles of Computer
-                            Programming
-                        </div>
-                        <div class="small-list-wrapper">
-                            <img src="logos/scientica.png"></img><b>Scientica Leuven vzw,</b> Secretary of the Board of
-                            Directors, Webmaster
-                        </div>
-                        <div class="small-list-wrapper">
-                            <img src="logos/wina.png"><b>Wina Leuven vzw,</b> Member of the Board of Directors,
-                            Webmaster
-                        </div>
+                        <br>
+
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/rc.png"/></td>
+                                <td>
+                                    <b>Red
+                                        Cross,</b> Event Paramedic
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/rc.png"/></td>
+                                <td>
+                                    <b>Red Cross Youth Retie-Dessel,</b>
+                                    Deputy President and First Aid
+                                    Instructor
+                                    <div class="extra-info">
+                                        Youth leader in an openly
+                                        accessible
+                                        youth movement and first aid
+                                        instructor
+                                        for children of age 6 to 16.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/kul.jpg"/></td>
+                                <td>
+                                    <b>KU Leuven,</b>
+                                    PAL Tutor Principles of Computer
+                                    Programming
+                                    <div class="extra-info">
+                                        Organizing and teaching Peer
+                                        Assisted
+                                        Learning sessions in Python
+                                        programming
+                                        to first year Informatics
+                                        students.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/scientica.png"/>
+                                </td>
+                                <td>
+                                    <b>Scientica Leuven vzw,</b> Board
+                                    Secretary
+                                    <div class="extra-info">
+                                        Day-to-day management of an
+                                        overarching
+                                        student organization at the
+                                        Faculty of
+                                        Science of KU Leuven.
+                                        Responsible for
+                                        internal quality
+                                        assurance and documentation.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/wina.png"/></td>
+                                <td>
+                                    <b>Wina Leuven vzw,</b> Board Member
+                                    <div class="extra-info">
+                                        Day-to-day management of the
+                                        student
+                                        organisation for Physics,
+                                        Mathematics
+                                        and Informatics at KU Leuven.
+                                        Organizing
+                                        events and parties.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/scientica.png"/>
+                                    <img
+                                            src="logos/wina.png"/></td>
+                                <td>
+                                    <b>Scientica Leuven vzw & Wina
+                                        Leuven
+                                        vzw,</b> Webmaster
+                                    <div class="extra-info">
+                                        Team leader of
+                                        the technical support teams and
+                                        of
+                                        multiple student organizations
+                                        and
+                                        sysadmin of a small scale
+                                        distributed
+                                        Linux server infrastructure.
+                                        Developing and maintaining the
+                                        websites and online
+                                        course service platform.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="experience small-experience">
+                            <tr>
+                                <td><img src="logos/s4c.png"/></td>
+                                <td>
+                                    <b>Students for Climate Leuven</b>
+                                </td>
+                            </tr>
+                        </table>
+
+
                     </div>
                 </div>
 
