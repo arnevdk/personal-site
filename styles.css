@@ -218,6 +218,9 @@ h3 {
     padding-bottom: 1em;
 }
 
+.experience.small-experience tr:last-child td {
+    padding-bottom: .3em;
+}
 
 .experience td:last-child {
     padding-right: 1em;
@@ -275,6 +278,7 @@ h3 {
 .experience.small-experience td {
     padding: .3em;
 }
+
 
 .experience.small-experience img {
     width: 1em;
