@@ -39,6 +39,7 @@ main {
     z-index: 1;
 }
 
+
 @media only screen and (max-width: 1000px) {
 
     main {
@@ -147,6 +148,9 @@ main {
         min-height: 100vh;
     }
 
+    .tags {
+        max-width: 400px;
+    }
 
 }
 
