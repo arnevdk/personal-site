@@ -19,6 +19,9 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="loadingscreen" class="hidden"></div>
+<script type="text/javascript"> document.getElementById("loadingscreen").classList.remove("hidden")
+</script>
 <main>
     <div id="left" class="main-panel">
         <div class="blur">
@@ -165,11 +168,11 @@
 
                         <h2>Interests</h2>
                         <div class="tags">
-                        <a class="tag">Machine Learning</a>
-                        <a class="tag">Neuroscience</a>
-                        <a class="tag">FOSS</a>
-                        <a class="tag">Red Cross</a>
-                        <a class="tag">Cybersecurity</a>
+                            <a class="tag">Machine Learning</a>
+                            <a class="tag">Neuroscience</a>
+                            <a class="tag">FOSS</a>
+                            <a class="tag">Red Cross</a>
+                            <a class="tag">Cybersecurity</a>
                         </div>
                     </div>
                     <div class="page" id="page2">
@@ -488,6 +491,7 @@
 
 </main>
 <script src="pages.js"></script>
+<script src="loading.js"></script>
 
 </body>
 
