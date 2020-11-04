@@ -31,7 +31,7 @@ ul, ol {
     padding-left: 1em;
 }
 
-main {
+main, #right-wrapper {
     background-color: #eee;
 }
 
