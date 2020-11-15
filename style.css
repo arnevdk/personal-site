@@ -406,3 +406,58 @@ a.ghost-button:hover {
     transition: all .3s;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #eee;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    min-width: 280px;
+    width: 30%;
+    max-width: 460px; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cv-download-btn{
+    font-weight: bold;
+    margin: 1em 2em;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+.cv-download-btn:hover{
+    text-decoration: none!important;
+}
+
+.cv-download-btn:hover span{
+    text-decoration: underline;
+}

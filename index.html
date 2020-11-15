@@ -24,6 +24,22 @@
 </div>
 <script type="text/javascript"> document.getElementById("loadingscreen").classList.remove("hidden")
 </script>
+
+<div id="cv-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+            <a class="cv-download-btn"
+               href="https://gitlab.com/arne.vandenkerchove/curriculum-vitae/-/jobs/artifacts/master/raw/professional_cv.pdf?job=compile_professional"><span>Professional
+               Resume</span>&nbsp;&nbsp;<i class="fas fa-download"></i></i></a>
+            <a class="cv-download-btn"
+               href="https://gitlab.com/arne.vandenkerchove/curriculum-vitae/-/jobs/artifacts/master/raw/academic_cv.pdf?job=compile_academic"><span>Academic
+                CV</span>&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+        </p>
+    </div>
+
+</div>
+
 <main>
     <div id="left" class="main-panel">
         <div class="blur">
@@ -66,9 +82,9 @@
                 <br>
                 <a><i class="fas fa-map-marker-alt"></i> Leuven, Belgium</a>
                 &nbsp;&nbsp;
-                <a class="ghost-button"
-                   href="https://gitlab.com/arne.vandenkerchove/curriculum-vitae/-/jobs/artifacts/master/raw/cv.pdf?job=compile_pdf">
-                    <i class="fas fa-file-download"></i>&nbsp; download cv</a>
+                <a id="cv-btn" class="ghost-button" href="#">
+                    <i class="fas fa-file-download"></i>&nbsp; download cv
+                </a>
             </div>
 
         </div>
@@ -509,8 +525,8 @@
 
 </main>
 <script src="pages.js"></script>
+<script src="modal.js"></script>
 <script src="loading.js"></script>
-
 </body>
 
 </html>
