@@ -1,179 +1,257 @@
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Arne Van Den Kerchove</title>
-    <meta name="description"
-          content="I am a motivated Computer Science graduate from KU Leuven University with interests in open source software, Artificial Intelligence and neuroscience. I have several years of experience as a volunteer in multiple non-profit organisations, both in Leuven and in my home town. I have a strong analytical and problem solving oriented mindset.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://vandenkerchove.com/">
+    <meta
+      name="description"
+      content="I am a motivated Computer Science graduate from KU Leuven University with interests in open source software, Artificial Intelligence and neuroscience. I have several years of experience as a volunteer in multiple non-profit organisations, both in Leuven and in my home town. I have a strong analytical and problem solving oriented mindset."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://vandenkerchove.com/" />
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
-          rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3c06ca31b5.js"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-            crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="loadingscreen" class="hidden">
-    <div class="spinner"></div>
-</div>
-<script type="text/javascript"> document.getElementById("loadingscreen").classList.remove("hidden")
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3c06ca31b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="loadingscreen" class="hidden">
+      <div class="spinner"></div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("loadingscreen").classList.remove("hidden");
+    </script>
 
-
-</script>
-
-<div id="cv-modal" class="modal">
-    <div class="modal-content">
+    <div id="cv-modal" class="modal">
+      <div class="modal-content">
         <span class="close">&times;</span>
         <p>
-            <a class="cv-download-btn"
-               href="https://gitlab.com/arnevdk/curriculum-vitae/-/jobs/artifacts/master/raw/out/professional_cv.pdf?job=compile"><span>Professional
-               Resume</span>&nbsp;&nbsp;<i class="fas fa-download"></i></i></a>
-            <a class="cv-download-btn"
-               href="https://gitlab.com/arnevdk/curriculum-vitae/-/jobs/artifacts/master/raw/out/academic_cv.pdf?job=compile"><span>Academic
-                CV</span>&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+          <a
+            class="cv-download-btn"
+            href="https://gitlab.com/arnevdk/curriculum-vitae/-/jobs/artifacts/master/raw/out/professional_cv.pdf?job=compile"
+            ><span>Professional Resume</span>&nbsp;&nbsp;<i
+              class="fas fa-download"
+            ></i
+          ></a>
+          <a
+            class="cv-download-btn"
+            href="https://gitlab.com/arnevdk/curriculum-vitae/-/jobs/artifacts/master/raw/out/academic_cv.pdf?job=compile"
+            ><span>Academic CV</span>&nbsp;&nbsp;<i class="fas fa-download"></i
+          ></a>
         </p>
+      </div>
     </div>
 
-</div>
-
-<main>
-    <div id="left" class="main-panel">
-        <div class="blur">
-
-        </div>
+    <main>
+      <div id="left" class="main-panel">
+        <div class="blur"></div>
         <div id="me">
-            <div>
-                <img class="profile-picture" src="profile.jpg"
-                     alt="Arne Van Den Kerchove"></img>
-                <h1>Arne Van Den Kerchove</h1>
-                <h3>Ph.D. Researcher Brain-Computer Interfaces</h3>
-                <a>
-                    <i class="fas fa-envelope" class="me-icon"></i>
-                    arne[dot]vandenkerchove[at]kuleuven[dot]com
-                </a>&nbsp;&nbsp;
-                <a>
-                    <i class="fas fa-envelope" class="me-icon"></i>
-                    arne[at]vandenkerchove[dot]com
-                </a>&nbsp;&nbsp;
-                <a href="https://github.com/arnevdk">
-                    <img src="logos/github.png"
-                         style="margin-bottom:-0.15em" id="github"
-                         class="me-icon"></img>
-                    arnevdk</a>&nbsp;&nbsp;
-		<a href="https://gitlab.com/arnevdk">
-                    <img src="logos/gitlab.png"
-                         style="margin-bottom:-0.15em" id="gitlab"
-                         class="me-icon"></img>
-                    arnevdk
-                </a>&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/arnevdk/">
-                    <img src="logos/linkedin.png"
-                         style="margin-bottom:-0.15em" id="linkedin"
-                         class="me-icon"></img>
-		    arnevdk
-                </a>&nbsp;&nbsp;
-                <a href="https://matrix.to/#/@arnevdk:one.ems.host">
-                    <img src="logos/matrix.png"
-                         style="margin-bottom:-0.15em" id="matrix"
-                         class="me-icon"></img>
-			@arnevdk:one.ems.host
-                </a>&nbsp;&nbsp;
-                <span itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs"
-                                                                       content="https://orcid.org/0000-0002-9367-2986"
-                                                                       href="https://orcid.org/0000-0002-9367-2986"
-                                                                       target="orcid.widget"
-                                                                       rel="me noopener noreferrer"
-                                                                       style="vertical-align:top;"><img
-                        src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                        style="width:1em;margin-right:.5em;"
-			alt="ORCID iD
-			icon">0000-0002-9367-2986</a></span>&nbsp;&nbsp;
-                <a href="https://sciprofiles.com/profile/arnevdk">
-                    <img src="logos/sciprofiles.png"
-                         style="margin-bottom:-0.15em" id="sciprofiles"
-                         class="me-icon"></img>
-                    	arnevdk
-                </a><br>
-                <br>
-                <a><i class="fas fa-map-marker-alt"></i> Leuven, Belgium</a>
-                &nbsp;&nbsp;
-                <a id="cv-btn" class="ghost-button" href="#">
-                    <i class="fas fa-file-download"></i>&nbsp; download cv
-                </a>
-            </div>
-
+          <div>
+            <img
+              class="profile-picture"
+              src="profile.jpg"
+              alt="Arne Van Den Kerchove"
+            />
+            <h1>Arne Van Den Kerchove</h1>
+            <h3>Ph.D. Researcher Brain-Computer Interfaces</h3>
+            <a>
+              <i class="fas fa-envelope me-icon"></i>
+              arne[dot]vandenkerchove[at]kuleuven[dot]com </a
+            >&nbsp;&nbsp;
+            <a>
+              <i class="fas fa-envelope me-icon"></i>
+              arne[at]vandenkerchove[dot]com </a
+            >&nbsp;&nbsp;
+            <a href="https://github.com/arnevdk">
+              <img
+                src="logos/github.png"
+                style="margin-bottom: -0.15em"
+                id="github"
+                class="me-icon"
+              />
+              arnevdk</a
+            >&nbsp;&nbsp;
+            <a href="https://gitlab.com/arnevdk">
+              <img
+                src="logos/gitlab.png"
+                style="margin-bottom: -0.15em"
+                id="gitlab"
+                class="me-icon"
+              />
+              arnevdk </a
+            >&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/arnevdk/">
+              <img
+                src="logos/linkedin.png"
+                style="margin-bottom: -0.15em"
+                id="linkedin"
+                class="me-icon"
+              />
+              arnevdk </a
+            >&nbsp;&nbsp;
+            <a href="https://matrix.to/#/@arnevdk:one.ems.host">
+              <img
+                src="logos/matrix.png"
+                style="margin-bottom: -0.15em"
+                id="matrix"
+                class="me-icon"
+              />
+              @arnevdk:one.ems.host </a
+            >&nbsp;&nbsp;
+            <span itemscope itemtype="https://schema.org/Person"
+              ><a
+                itemprop="sameAs"
+                content="https://orcid.org/0000-0002-9367-2986"
+                href="https://orcid.org/0000-0002-9367-2986"
+                target="orcid.widget"
+                rel="me noopener noreferrer"
+                style="vertical-align: top"
+                ><img
+                  src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                  style="width: 1em; margin-right: 0.5em"
+                  alt="ORCID iD
+			icon"
+                />0000-0002-9367-2986</a
+              ></span
+            >&nbsp;&nbsp;
+            <a href="https://sciprofiles.com/profile/arnevdk">
+              <img
+                src="logos/sciprofiles.png"
+                style="margin-bottom: -0.15em"
+                id="sciprofiles"
+                class="me-icon"
+              />
+              arnevdk </a
+            ><br />
+            <br />
+            <a><i class="fas fa-map-marker-alt"></i> Leuven, Belgium</a>
+            &nbsp;&nbsp;
+            <a id="cv-btn" class="ghost-button" href="#">
+              <i class="fas fa-file-download"></i>&nbsp; download cv
+            </a>
+          </div>
         </div>
-
-    </div>
-    <div id="right" class="main-panel">
+      </div>
+      <div id="right" class="main-panel">
         <div id="right-wrapper">
-            <div class="container">
-                <div id="pages">
-                    <div class="page" id="page1">
-                        <a class="page-nav" id="page-nav-1"
-                           href="#experience">Experience &rarr;</a>
-                        <br>
-                        <br>
-                        <h2>Publications</h2>
-                        <ol>
-                            <a href="#">
-                                <li>A. Van Den Kerchove, B. Wittevrongel, V. Pergher, M. Van Hulle
-                                    <i>Linguistic transcription of EEG responses to sequences of visual stimuli</i>,
-                                    KU Leuven, 2020. (thesis)
-                                </li>
-                            </a>
-                        </ol>
-                        <h2>Presentations</h2>
-                        <br>
-                        <a href="https://www.cortico.fr/wp-content/uploads/2021/04/CORTICO_21_bookofabstracts2.pdf">
-                            <table class="experience experience-project">
-                                <tr>
-                                    <td><img src="logos/cortico.png"/>
-                                    </td>
-                                    <td>
-                                        <b>JJC-ICON 2021</b><br>
-                                        Presentation at CORTICO Young Researchers Day about a multi-component approach
-                                        to spatiotemporal beamforming decoding of event-related potentials.
-                                    </td>
-                                </tr>
-                            </table>
-                        </a>
-                        <a href="https://gitlab.com/arnevdk/dagvandewetenschap-2021/-/jobs/artifacts/main/raw/out/dagvandewetenschap.pdf?job=compile">
-                            <table class="experience experience-project">
-                                <tr>
-                                    <td><img src="logos/kul.jpg"/>
-                                    </td>
-                                    <td>
-                                        <b>KU Leuven Science Day 2021</b><br>
-                                        Dutch poster for the general public about covert attention BCIs and ERP
-                                        classification with spatiotemporal beamforming.
-                                    </td>
-                                </tr>
-                            </table>
-                        </a>
-                        <a href="https://gitlab.com/arnevdk/offline-stbf-demo/-/blob/main/demo.ipynb">
-                            <table class="experience experience-project">
-                                <tr>
-                                    <td><img src="logos/kul.jpg"/>
-                                    </td>
-                                    <td>
-                                        <b>KU Leuven Science Day 2021 Demo</b><br>
-                                        Dutch online demo of event-related potenial decoding with spatiotemporal
-                                        beamforming
-                                        for the general public.
-                                    </td>
-                                </tr>
-                            </table>
-                        </a>
+          <div class="container">
+            <div id="pages">
+              <div class="page" id="page-gallery">
+                <a class="page-nav" href="#about-me">About me&rarr;</a>
+                <br />
+                <br />
+                <a
+                  href="gallery/structured_covariance.png"
+                  title="Classification of event-related potentials with regularized LCMV beamforming"
+                >
+                  <br />
+                  <img
+                    class="gallery-image"
+                    src="gallery/structured_covariance.png"
+                    alt="Classification of event-related
+					  potentials with regularized LCMV
+					  beamforming"
+                  />
+                </a>
+                <br />
+                <br />
+                <a
+                  href="gallery/dagvandewetenschap-2022-poster.pdf"
+                  title="KU Leuven Science Day 2021"
+                >
+                  <img
+                    class="gallery-image"
+                    src="gallery/dagvandewetenschap-2022-poster.png"
+                    alt="KU Leuven Science Day 2021"
+                  />
+                </a>
+                <br />
+                <br />
+                <a
+                  href="gallery/multi-component-beamforming-pitch.svg"
+                  title="Multi-component beamforming"
+                >
+                  <img
+                    class="gallery-image"
+                    src="gallery/multi-component-beamforming-pitch.svg"
+                    alt="Multi-component beamforming"
+                  />
+                </a>
+              </div>
+              <div class="page" id="page-about-me">
+                <div class="page-nav">
+                  <a href="#gallery">&larr; Gallery</a>
+                  &nbsp;&nbsp;
+                  <a href="#experience">Experience &rarr;</a>
+                </div>
+                <br />
+                <br />
+                <h2>Publications</h2>
+                <ol reversed>
+                  <a href="https://doi.org/10.3390/app12062918">
+                    <li>
+                      Arne Van Den Kerchove, Arno Libert, Benjamin Wittevrongel,
+                      Marc M. Van Hulle. Classification of Event-Related
+                      Potentials with Regularized Spatiotemporal LCMV
+                      Beamforming.
+                      <i>Applied Sciences.</i> 2022; 12 (6):2918.
+                    </li>
+                  </a>
+                  <a href="#">
+                    <li>
+                      Arne Van Den Kerchove, Benjamin Wittevrongel, Valentina
+                      Pergher, Marc M. Van Hulle. Linguistic transcription of
+                      EEG responses to sequences of visual stimuli,
+                      <i>KU Leuven Master's Thesis</i>, 2020.
+                    </li>
+                  </a>
+                </ol>
+                <h2>Presentations</h2>
+                <br />
+                <a
+                  href="https://www.cortico.fr/wp-content/uploads/2021/04/CORTICO_21_bookofabstracts2.pdf"
+                >
+                  <table class="experience experience-project">
+                    <tr>
+                      <td><img src="logos/cortico.png" /></td>
+                      <td>
+                        <b>JJC-ICON 2021</b><br />
+                        Presentation at CORTICO Young Researchers Day about a
+                        multi-component approach to spatiotemporal beamforming
+                        decoding of event-related potentials.
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+                <a
+                  href="https://gitlab.com/arnevdk/offline-stbf-demo/-/blob/main/demo.ipynb"
+                >
+                  <table class="experience experience-project">
+                    <tr>
+                      <td><img src="logos/kul.jpg" /></td>
+                      <td>
+                        <b>KU Leuven Science Day 2021</b><br />
+                        Dutch online demo of event-related potenial decoding
+                        with spatiotemporal beamforming for the general public.
+                      </td>
+                    </tr>
+                  </table>
+                </a>
 
-
-                        <!--
+                <!--
                         <h2>Projects</h2>
                         <br>
                         <a href="https://gitlab.com/arnevdk/bibl">
@@ -264,332 +342,316 @@
                         </a>
                         -->
 
-
-                        <h2>Interests</h2>
-                        <div class="tags">
-                            <a class="tag">Machine Learning</a>
-                            <a class="tag">Neuroscience</a>
-                            <a class="tag">FOSS</a>
-                            <a class="tag">Red Cross</a>
-                            <a class="tag">Cybersecurity</a>
-                        </div>
-                    </div>
-                    <div class="page" id="page2">
-                        <a class="page-nav" id="page-nav-2"
-                           href="#about-me">&larr; About me</a>
-                        <br>
-                        <br>
-                        <h2>Education</h2>
-                        <br>
-                        <table class="experience">
-                            <tr>
-                                <td>
-                                    <img src="logos/kul.jpg">
-                                </td>
-                                <td>
-                                    <b>Ph.D. in Biomedical
-                                        Sciences</b><br>
-                                    KU Leuven,
-                                    ongoing
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <img src="logos/ulille.jpg">
-                                </td>
-                                <td>
-                                    <b>Ph.D. in Control Science and Signal Processing</b><br>
-                                    University of Lille,
-                                    ongoing
-                                    <div class="extra-info">
-                                        KU Leuven &amp; University of
-                                        Lille Global Ph.D.
-                                        Partnerships 2020 Grant
-                                        <br><br>
-                                        Thesis: <i>EEG-based Visual
-                                        Brain-Computer Interface for
-                                        Gaze-free Communication</i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/kul.jpg"></td>
-                                <td>
-                                    <b>M.Sc. in Engineering
-                                        Sciences:
-                                        Computer Science,</b> <i>Cum
-                                    laude</i><br>
-                                    KU Leuven, 2020
-                                    <div class="extra-info">
-                                        Option Artificial
-                                        Intelligence.
-                                        Thesis: <i>Transcription
-                                        of multiple ERP
-                                        components from
-                                        EEG recordings using
-                                        spatio-temporal
-                                        beamforming</i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/kul.jpg"></td>
-                                <td>
-                                    <b>B.Sc. in Informatics</b><br>
-                                    KU Leuven, 2017
-                                    <div class="extra-info">
-                                        Minor in natural sciences.
-                                        Thesis: <i>Drone
-                                        simulator and stereoscopic
-                                        object detection
-                                        autopilot</i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                        <h2>Professional experience</h2>
-                        <br>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/kul.jpg"></td>
-                                <td>
-                                    <b>Teaching Assistant Fundamentals
-                                        of
-                                        Computer Science</b><br>
-                                    KU Leuven, 2020 <br>
-                                    <div class="extra-info">
-                                        Teaching programming and
-                                        algorithmic
-                                        reasoning to first year
-                                        engineering
-                                        students.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/mindspeller.png">
-                                </td>
-                                <td>
-                                    <b>Python Developer</b><br>
-                                    Mindspeller, 2019 <br>
-                                    <div class="extra-info">
-                                        Python flask developer in a
-                                        spin-off
-                                        of the KU Leuven Computational
-                                        Neuroscience lab
-                                        that provides marketing services
-                                        based on neuroscientifically
-                                        validated association
-                                        studies.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/baf.png"></td>
-                                <td>
-                                    <b>Database Technician</b><br>
-                                    Pharmacists Forum of Brabant, 2015
-                                    <br>
-                                    <div class="extra-info">
-                                        Database refactoring and
-                                        migration.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/webdev.png"></td>
-                                <td>
-                                    <b>Freelance Full-stack Web
-                                        Developer</b><br>
-                                    Self employed, 2014-2020 <br>
-                                    <div class="extra-info">
-                                        I build and design websites for
-                                        small start-ups and
-                                        organisations
-                                        with Drupal CMS or
-                                        Django,
-                                        combined with hosting on own
-                                        server
-                                        infrastructure.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                        <table class="experience">
-                            <tr>
-                                <td><img src="logos/webdev.png"></td>
-                                <td>
-                                    <b>Front-end Web Developer</b><br>
-                                    GBITs Web Development, 2014 <br>
-                                    <div class="extra-info">
-                                        HTML/CSS template editing for a small web development company.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                        <h2>Volunteering Experience</h2>
-                        <br>
-
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/rc.png"/></td>
-                                <td>
-                                    <b>Red
-                                        Cross,</b> Event Paramedic
-                                    <div class="extra-info">
-                                        Helping people in need.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/rc.png"/></td>
-                                <td>
-                                    <b>Red Cross Youth,</b>
-                                    Local Deputy President and First Aid
-                                    Instructor
-                                    <div class="extra-info">
-                                        Youth leader in an openly
-                                        accessible
-                                        youth movement and first aid
-                                        instructor
-                                        for children of age 6 to 16.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/kul.jpg"/></td>
-                                <td>
-                                    <b>KU Leuven,</b>
-                                    PAL Tutor Principles of Computer
-                                    Programming
-                                    <div class="extra-info">
-                                        Organizing and teaching Peer
-                                        Assisted
-                                        Learning sessions in Python
-                                        programming
-                                        to first year Informatics
-                                        students.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/scientica.png"/>
-                                </td>
-                                <td>
-                                    <b>Scientica Leuven vzw,</b> Board
-                                    Secretary
-                                    <div class="extra-info">
-                                        Day-to-day management of an
-                                        overarching
-                                        student organization at the
-                                        Faculty of
-                                        Science of KU Leuven.
-                                        Responsible for
-                                        internal quality
-                                        assurance and documentation.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/wina.png"/></td>
-                                <td>
-                                    <b>Wina Leuven vzw,</b> Board Member
-                                    <div class="extra-info">
-                                        Day-to-day management of the
-                                        student
-                                        organisation for Physics,
-                                        Mathematics
-                                        and Informatics at KU Leuven.
-                                        Organizing
-                                        events and parties.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/scientica.png"/>
-                                    <img
-                                            src="logos/wina.png"/></td>
-                                <td>
-                                    <b>Scientica Leuven vzw & Wina
-                                        Leuven
-                                        vzw,</b> Webmaster
-                                    <div class="extra-info">
-                                        Team leader of
-                                        the technical support teams and
-                                        of
-                                        multiple student organizations
-                                        and
-                                        sysadmin of a small scale
-                                        distributed
-                                        Linux server infrastructure.
-                                        Developing and maintaining the
-                                        websites and online
-                                        course service platform.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                        <table class="experience small-experience">
-                            <tr>
-                                <td><img src="logos/s4c.png"/></td>
-                                <td>
-                                    <b>Students for Climate Leuven</b>
-                                    <div class="extra-info">
-                                        Organizing and mobilizing for a
-                                        greener future.
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-
-                    </div>
+                <h2>Interests</h2>
+                <div class="tags">
+                  <a class="tag">Machine Learning</a>
+                  <a class="tag">Neuroscience</a>
+                  <a class="tag">FOSS</a>
+                  <a class="tag">Red Cross</a>
+                  <a class="tag">Cybersecurity</a>
                 </div>
+              </div>
+              <div class="page" id="page-experience">
+                <a class="page-nav" href="#about-me">&larr; About me</a>
+                <br />
+                <br />
+                <h2>Education</h2>
+                <br />
+                <table class="experience">
+                  <tr>
+                    <td>
+                      <img src="logos/kul.jpg" />
+                    </td>
+                    <td class="experience-description">
+                      <b>Ph.D. in Biomedical Sciences</b><br />
+                      KU Leuven, ongoing
+                    </td>
+                  </tr>
 
+                  <tr>
+                    <td>
+                      <img src="logos/ulille.jpg" />
+                    </td>
+                    <td class="experience-description">
+                      <b>Ph.D. in Control Science and Signal Processing</b
+                      ><br />
+                      University of Lille, ongoing
+                      <div class="extra-info">
+                        KU Leuven &amp; University of Lille Global Ph.D.
+                        Partnerships 2020 Grant
+                        <br /><br />
+                        Thesis:
+                        <i
+                          >EEG-based Visual Brain-Computer Interface for
+                          Gaze-free Communication</i
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="experience">
+                  <tr>
+                    <td><img src="logos/kul.jpg" /></td>
+                    <td class="experience-description">
+                      <b>M.Sc. in Engineering Sciences: Computer Science,</b>
+                      <i>Cum laude</i><br />
+                      KU Leuven, 2020
+                      <div class="extra-info">
+                        Option Artificial Intelligence. Thesis:
+                        <i
+                          >Transcription of multiple ERP components from EEG
+                          recordings using spatio-temporal beamforming</i
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="experience">
+                  <tr>
+                    <td><img src="logos/kul.jpg" /></td>
+                    <td class="experience-description">
+                      <b>B.Sc. in Informatics</b><br />
+                      KU Leuven, 2017
+                      <div class="extra-info">
+                        Minor in natural sciences. Thesis:
+                        <i
+                          >Drone simulator and stereoscopic object detection
+                          autopilot</i
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2>Professional experience</h2>
+                <br />
+                <a
+                  href="https://onderwijsaanbod.kuleuven.be/syllabi/n/H01B6BN.htm#activetab=doelstellingen_idp867904"
+                  class="noline"
+                >
+                  <table class="experience">
+                    <tr>
+                      <td><img src="logos/kul.jpg" /></td>
+                      <td class="experience-description">
+                        <b
+                          >Teaching Assistant Fundamentals of Computer
+                          Science</b
+                        ><br />
+                        KU Leuven, 2020 <br />
+                        <div class="extra-info">
+                          Teaching programming and algorithmic reasoning to
+                          first year engineering students.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <a href="htps://mindspeller.com" class="noline">
+                  <table class="experience">
+                    <tr>
+                      <td><img src="logos/mindspeller.png" /></td>
+                      <td class="experience-description">
+                        <b>Python Developer</b><br />
+                        Mindspeller, 2019 <br />
+                        <div class="extra-info">
+                          Python flask developer in a spin-off of the KU Leuven
+                          Computational Neuroscience lab that provides marketing
+                          services based on neuroscientifically validated
+                          association studies.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <a href="https://baf.be/" class="noline">
+                  <table class="experience">
+                    <tr>
+                      <td><img src="logos/baf.png" /></td>
+                      <td class="experience-description">
+                        <b>Database Technician</b><br />
+                        Pharmacists Forum of Brabant, 2015
+                        <br />
+                        <div class="extra-info">
+                          Database refactoring and migration.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+                <table class="experience">
+                  <tr>
+                    <td><img src="logos/webdev.png" /></td>
+                    <td class="experience-description">
+                      <b>Freelance Full-stack Web Developer</b><br />
+                      Self employed, 2014-2020 <br />
+                      <div class="extra-info">
+                        I build and design websites for small start-ups and
+                        organisations with Drupal CMS or Django, combined with
+                        hosting on own server infrastructure.
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="experience">
+                  <tr>
+                    <td><img src="logos/webdev.png" /></td>
+                    <td class="experience-description">
+                      <b>Front-end Web Developer</b><br />
+                      GBITS Web Development, 2014 <br />
+                      <div class="extra-info">
+                        HTML/CSS template editing for a small web development
+                        company.
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <h2>Volunteering Experience</h2>
+                <br />
+
+                <a href="https://ntxl.org" class="noline">
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/ntxl.png" /></td>
+                      <td class="experience-description">
+                        <b>NeurotechX Leuven, </b> Project Supervisor
+                        <div class="extra-info">
+                          Supervising extracurricular BCI/neurotech student
+                          projects.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+                <a
+                  href="https://www.rodekruis.be/afdeling/leuven/"
+                  class="noline"
+                >
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/rc.png" /></td>
+                      <td class="experience-description">
+                        <b>Red Cross,</b> Event Paramedic
+                        <div class="extra-info">Helping people in need.</div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <table class="experience small-experience">
+                  <tr>
+                    <td><img src="logos/rc.png" /></td>
+                    <td class="experience-description">
+                      <b>Red Cross Youth,</b>
+                      Local Deputy President and First Aid Instructor
+                      <div class="extra-info">
+                        Youth leader in an openly accessible youth movement and
+                        first aid instructor for children of age 6 to 16.
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <a
+                  href="https://onderwijsaanbod.kuleuven.be/2021/syllabi/n/G0N28AN.htm#activetab=doelstellingen_idp1512624"
+                  class="noline"
+                >
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/kul.jpg" /></td>
+                      <td class="experience-description">
+                        <b>KU Leuven,</b>
+                        PAL Tutor Principles of Computer Programming
+                        <div class="extra-info">
+                          Organizing and teaching Peer Assisted Learning
+                          sessions in Python programming to first year
+                          Informatics students.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <a href="https://scientica.be" class="noline">
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/scientica.png" /></td>
+                      <td class="experience-description">
+                        <b>Scientica Leuven vzw,</b> Board Secretary
+                        <div class="extra-info">
+                          Day-to-day management of an overarching student
+                          organization at the Faculty of Science of KU Leuven.
+                          Responsible for internal quality assurance and
+                          documentation.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <a href="https://wina.be" class="noline">
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/wina.png" /></td>
+                      <td class="experience-description">
+                        <b>Wina Leuven vzw,</b> Board Member
+                        <div class="extra-info">
+                          Day-to-day management of the student organisation for
+                          Physics, Mathematics and Informatics at KU Leuven.
+                          Organizing events and parties.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+                <a href="https://scientica.be">
+                  <table class="experience small-experience">
+                    <tr>
+                      <td>
+                        <img src="logos/scientica.png" />
+                        <img src="logos/wina.png" />
+                      </td>
+                      <td class="experience-description">
+                        <b>Scientica Leuven vzw &#38; Wina Leuven vzw,</b>
+                        Webmaster
+                        <div class="extra-info">
+                          Team leader of the technical support teams and of
+                          multiple student organizations and sysadmin of a small
+                          scale distributed Linux server infrastructure.
+                          Developing and maintaining the websites and online
+                          course service platform.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
+                <a href="http://s4cleuven.be" class="noline">
+                  <table class="experience small-experience">
+                    <tr>
+                      <td><img src="logos/s4c.png" /></td>
+                      <td class="experience-description">
+                        <b>Students for Climate Leuven</b>
+                        <div class="extra-info">
+                          Organizing and mobilizing for a greener future.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-
-</main>
-<script src="pages.js"></script>
-<script src="modal.js"></script>
-<script src="loading.js"></script>
-</body>
-
+      </div>
+    </main>
+    <script src="pages.js"></script>
+    <script src="modal.js"></script>
+    <script src="loading.js"></script>
+  </body>
 </html>

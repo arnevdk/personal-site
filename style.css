@@ -21,6 +21,11 @@ a:link:hover {
     text-decoration: underline
 }
 
+a.noline:link{
+
+	text-decoration: none;
+}
+
 
 li {
     padding: 1em;
@@ -39,6 +44,9 @@ main, #right-wrapper {
     z-index: 1;
 }
 
+#me{
+	max-width: 600px;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -265,12 +273,24 @@ h3 {
     width: auto;
 }
 
+.gallery-image{
+	width: 100%;
+	transition: transform .2s;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
 .experience {
+    width: 100%;
     margin-left: -1em;
     margin-top: -1em;
     transition: all .2s ease-in;
 
 
+}
+
+.experience .experience-description{
+	width: 100%;
 }
 
 
@@ -368,7 +388,6 @@ h3 {
 }
 
 .page {
-    display: inline-block;
     /*position: relative;*/
     top: 0;
 }

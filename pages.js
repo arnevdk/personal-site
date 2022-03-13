@@ -1,34 +1,39 @@
-$('#page2').hide();
-
-var animationTime = 200;
-
-window.onhashchange = function () {
-    if (location.hash == '#experience')
-        pageExperience();
-    else
-        pageAboutMe();
-
-}
-
-function pageExperience() {
-    $('#page1').hide("slide", {direction: "left"}, animationTime)
-    $('#page1').promise().done(function () {
-        $('#page2').show("slide", {direction: "right"}, animationTime);
-    });
-}
-
-function pageAboutMe() {
-    $('#page2').hide("slide", {direction: "right"}, animationTime)
-    $('#page2').promise().done(function () {
-        $('#page1').show("slide", {direction: "left"}, animationTime);
-    });
-}
-
-
-$('#page-nav-1').click(function () {
-    pageExperience();
+pages = ['gallery', 'about-me', 'experience']
+landingPage = pages[1]
+pages.forEach(function(page){
+	$('#page-'+page).hide();
 });
-
-$('#page-nav-2').click(function () {
-    pageAboutMe();
+hash = window.location.hash
+if(hash=='')
+	hash = landingPage
+else
+	hash = hash.substring(1);
+$('#page-'+hash).show();
+animationTime = 150;
+$(window).on("hashchange", function(e){
+	oldURL = new URL(e.originalEvent.oldURL);
+	oldHash = oldURL.hash;
+	if(oldHash === '')
+		oldHash = landingPage;
+	else
+		oldHash = oldHash.substring(1);
+	newURL = new URL(e.originalEvent.newURL);
+	newHash = newURL.hash.substring(1);
+	slideDirection = '';
+	if(pages.indexOf(oldHash) < pages.indexOf(newHash))
+		slideDirection = 'left';
+	else
+		slideDirection = 'right';
+	slidePage('page-' + oldHash, 'page-' + newHash, slideDirection);
 });
+function slidePage(oldId, newId, direction){
+	otherDirection = '';
+	if(direction === 'left')
+		otherDirection = 'right';
+	else
+		otherDirection = 'left';
+	$('#' + oldId).hide("slide", {direction: direction}, animationTime);
+	$('#' + oldId).promise().done(function(){
+		$('#' + newId).show("slide", {direction: otherDirection}, animationTime);
+	});
+}
