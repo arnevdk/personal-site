@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://arne.vandenkerchove.com/sitemap.xml
+Sitemap: https://arne.vandenkerchove.com/sitemap.xml
