@@ -1,0 +1,8 @@
+---
+services:
+  personal-site:
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+      - 8080:80
