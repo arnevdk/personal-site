@@ -6,3 +6,4 @@ services:
       dockerfile: Containerfile
     ports:
       - 8080:80
+    image: ghcr.io/arnevdk/personal-site:latest
