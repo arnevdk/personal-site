@@ -4,7 +4,7 @@ name: Build and Publish to GitHub Container Registry
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
