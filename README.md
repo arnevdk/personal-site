@@ -1,3 +1,3 @@
 Source code of my personal website.
 
-🚀 Check out arne.vandenkerchove.com
+🚀 Check out https://arne.vandenkerchove.com
