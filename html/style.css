@@ -468,11 +468,12 @@ a.ghost-button:hover {
 
 .cv-download-btn{
     font-weight: bold;
-    margin: 1em 2em;
-    display: inline-block;
-    white-space: nowrap;
+    padding: 4px 8px;
+    border: 2px solid white;
+    border-radius: 8px;
 
 }
+/**
 .cv-download-btn:hover{
     text-decoration: none!important;
 }
@@ -480,3 +481,4 @@ a.ghost-button:hover {
 .cv-download-btn:hover span{
     text-decoration: underline;
 }
+**/
