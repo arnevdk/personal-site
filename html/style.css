@@ -5,6 +5,7 @@ html, body {
     -ms-text-size-adjust: none;
     font-family: 'Kumbh Sans', sans-serif;
     color: #333;
+    background-color: #eee;
 }
 
 * {
