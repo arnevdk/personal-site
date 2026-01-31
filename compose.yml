@@ -7,3 +7,13 @@ services:
     ports:
       - 8080:80
     image: ghcr.io/arnevdk/personal-site:latest
+
+  personal-site-dev:
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+      - 8080:80
+    volumes:
+      - ./html:/usr/share/nginx/html:ro,z
+    image: ghcr.io/arnevdk/personal-site:latest
