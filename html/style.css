@@ -1,15 +1,15 @@
 body {
 	background-color: #dedede;
   	font-family: Verdana, sans-serif;
+	font-size: 21px;
+	margin: 0;
 }
 
 main {
 	background-color: white;
 	margin: auto;
-	width: 800px;
+	width: 900px;
 	padding: 4em;
-	border-radius: 10px;
-	margin-top: 20px;
 	line-height: 1.7em;
 	color: #333;
 }
@@ -33,6 +33,12 @@ a.noline:link{
 	margin-bottom: -0.2em;
 }
 
+td, th {
+vertical-align:top;
+padding-right: 1em;
+padding-bottom: 1em;
+}
+
 ul, ol {
     	padding-left: 0;
   	list-style-type: none;
@@ -41,4 +47,14 @@ ul, ol {
 li {
 
 	padding-bottom: 1em;
+}
+
+ @media only screen and (max-width: 1150px) {
+  body {
+    background-color: white;
+  }
+
+  main {
+	width: 100%;
+  }
 }
