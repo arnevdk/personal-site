@@ -1,5 +1,6 @@
 body {
-	background-color: #dedede;
+	/*background-color: #dedede;*/
+	background-color: white;
   	font-family: Verdana, sans-serif;
 	margin: 0;
 	font-size: 20px;
@@ -10,8 +11,18 @@ main {
 	margin: auto;
 	width: 800px;
 	padding: 4em;
-	line-height: 1.7em;
+	line-height: 1.5em;
 	color: #333;
+	position: relative;
+	text-align: justify;
+}
+
+p {
+	line-height: 1.7em;
+}
+
+h1, h2, h3, h4, b {
+	color: black;
 }
 
 h1:first{
@@ -68,3 +79,33 @@ li {
 	display:inline-block;
 	margin-left:2em;
 }
+
+
+body.dark {
+	background-color: #222;
+}
+body.dark main {
+	background-color: #222;
+	color: #ddd;
+}
+body.dark a, body.dark a:link, body.dark a:visited {
+    color:  #ddd;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark b, body.dark b a:link, body.dark b a:visited{
+	color: white;
+}
+
+
+#toggleDark {
+	text-decoration: none;
+	position: absolute;
+	top: 5.4em;
+	right: 4em;
+	cursor: pointer;
+}
+
+body #dark {display:inline;}
+body.dark #dark {display:none;}
+body #light {display:none;}
+body.dark #light {display:inline;}
