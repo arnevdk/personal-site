@@ -109,3 +109,5 @@ body #dark {display:inline;}
 body.dark #dark {display:none;}
 body #light {display:none;}
 body.dark #light {display:inline;}
+
+body.dark img.invert {filter: invert(1);}
